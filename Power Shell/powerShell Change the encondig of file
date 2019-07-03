@@ -1,0 +1,1 @@
+Get-ChildItem C:\Temp\json\Ano-2018.json | % { Get-Content $_ | Out-File -Encoding Unicode "$($_.basename)-unicode.json" }

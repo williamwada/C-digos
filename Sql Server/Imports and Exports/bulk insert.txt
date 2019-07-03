@@ -1,0 +1,11 @@
+BULK INSERT [Company].[Transactions]
+    FROM "C:\Bank Files\TransactionLog.csv"
+    WITH
+    (
+        FIELDTERMINATOR = '|',
+        ROWTERMINATOR = '\n',
+        MAXERRORS = 0,
+        DATAFILETYPE = 'widechar',
+        KEEPIDENTITY
+    )
+GO

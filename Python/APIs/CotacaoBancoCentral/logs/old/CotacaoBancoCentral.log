@@ -1,0 +1,148 @@
+12440 - 16-Apr-19 11:31:35 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.bcb.gov.br:80
+12440 - 16-Apr-19 11:31:35 - urllib3.connectionpool - DEBUG - http://api.bcb.gov.br:80 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 302 0
+12440 - 16-Apr-19 11:31:35 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.bcb.gov.br:443
+12440 - 16-Apr-19 11:31:35 - urllib3.connectionpool - DEBUG - https://api.bcb.gov.br:443 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 200 3901
+12440 - 16-Apr-19 11:31:35 - root - WARNING - Conexão com banco fechada.
+12440 - 16-Apr-19 11:40:47 - root - WARNING - Fazendo requisição ao Web Service.
+12440 - 16-Apr-19 11:40:47 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.bcb.gov.br:80
+12440 - 16-Apr-19 11:40:48 - urllib3.connectionpool - DEBUG - http://api.bcb.gov.br:80 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 302 0
+12440 - 16-Apr-19 11:40:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.bcb.gov.br:443
+12440 - 16-Apr-19 11:40:49 - urllib3.connectionpool - DEBUG - https://api.bcb.gov.br:443 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 200 3901
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Requisição realizado com sucesso.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Conectando na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Conectado com a base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Query executada com sucesso na base de dados.
+12440 - 16-Apr-19 11:40:49 - root - WARNING - Conexão com banco fechada.
+12440 - 16-Apr-19 11:44:30 - root - WARNING - Fazendo requisição ao Web Service.
+12440 - 16-Apr-19 11:44:30 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.bcb.gov.br:80
+12440 - 16-Apr-19 11:44:30 - urllib3.connectionpool - DEBUG - http://api.bcb.gov.br:80 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 302 0
+12440 - 16-Apr-19 11:44:30 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.bcb.gov.br:443
+12440 - 16-Apr-19 11:44:30 - urllib3.connectionpool - DEBUG - https://api.bcb.gov.br:443 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 200 3901
+12440 - 16-Apr-19 11:44:30 - root - WARNING - Requisição realizado com sucesso.
+12440 - 16-Apr-19 11:44:30 - root - WARNING - Conectando na base de dados.
+12440 - 16-Apr-19 11:44:30 - root - WARNING - Conectado com a base de dados.
+12440 - 16-Apr-19 11:44:30 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:44:30 - root - WARNING - Query executada com sucesso na base de dados.
+12440 - 16-Apr-19 11:44:30 - root - WARNING - Conexão com banco Finalizada.
+12440 - 16-Apr-19 11:53:56 - root - WARNING - Fazendo requisição ao Web Service.
+12440 - 16-Apr-19 11:53:56 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.bcb.gov.br:80
+12440 - 16-Apr-19 11:53:57 - urllib3.connectionpool - DEBUG - http://api.bcb.gov.br:80 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 302 0
+12440 - 16-Apr-19 11:53:57 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.bcb.gov.br:443
+12440 - 16-Apr-19 11:53:58 - urllib3.connectionpool - DEBUG - https://api.bcb.gov.br:443 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 200 3901
+12440 - 16-Apr-19 11:53:58 - root - WARNING - Requisição de dados realizado com sucesso.
+12440 - 16-Apr-19 11:53:58 - root - WARNING - Conectando na base de dados.
+12440 - 16-Apr-19 11:53:58 - root - WARNING - Conectado com a base de dados.
+12440 - 16-Apr-19 11:53:58 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:53:58 - root - WARNING - Query executada com sucesso na base de dados.
+12440 - 16-Apr-19 11:53:58 - root - WARNING - Conexão com banco Finalizada.
+12440 - 16-Apr-19 11:54:15 - root - WARNING - Fazendo requisição ao Web Service.
+12440 - 16-Apr-19 11:54:15 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.bcb.gov.br:80
+12440 - 16-Apr-19 11:54:15 - urllib3.connectionpool - DEBUG - http://api.bcb.gov.br:80 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 302 0
+12440 - 16-Apr-19 11:54:15 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.bcb.gov.br:443
+12440 - 16-Apr-19 11:54:15 - urllib3.connectionpool - DEBUG - https://api.bcb.gov.br:443 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 200 3901
+12440 - 16-Apr-19 11:54:15 - root - WARNING - Requisição de dados realizado com sucesso.
+12440 - 16-Apr-19 11:54:15 - root - WARNING - Conectando na base de dados.
+12440 - 16-Apr-19 11:54:15 - root - WARNING - Conectado com a base de dados.
+12440 - 16-Apr-19 11:54:15 - root - WARNING - Executando query na base de dados.
+12440 - 16-Apr-19 11:54:15 - root - WARNING - Query executada com sucesso na base de dados.
+12440 - 16-Apr-19 11:54:15 - root - WARNING - Conexão com banco Finalizada.

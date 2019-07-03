@@ -1,0 +1,1 @@
+Get-ChildItem "C:\Users\william.wada\Desktop\OneDrive - LCA Consultores\Tarefas\Camara\raw_data\proposicoes\json\*.json" | % { Get-Content $_ | Out-File -Encoding Unicode "$($_.basename)-unicode.json" }

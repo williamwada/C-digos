@@ -1,0 +1,23 @@
+Backup e Restore
+Para que o espelhamento funcione e comece a sincronizar, é necessário realizar um backup do banco principal e restaura-lo no servidor espelho(MIRROR), porém esse backup tem que ser de uma base no modo RECOVERY FULL.
+Não, não é necessário realizar no witness, pois ele será apenas um “escutador de disponibilidade”, não realizando conexões nem transações.
+
+Se você já tem uma base em recovery full e possui os backups, basta restaura-los no seu servidor espelho.
+
+Backup do banco de dados
+USE MASTER
+GO
+ALTER DATABASE bancodedados SET RECOVERY FULL
+GO
+BACKUP DATABASE bancodedados TO DISK = ‘C:\bancodedados_FullBackup.bak‘
+GO
+BACKUP LOG bancodedados TO DISK = ‘C:\bancodedados_LogBackup.trn‘
+GO
+
+Restore do banco de dados
+USE MASTER
+GO
+RESTORE DATABASE bancodedados FROM DISK = ‘C:\bancodedados_FullBackup.bak‘ WITH NORECOVERY
+GO
+RESTORE LOG bancodedados FROM DISK = ‘C:\bancodedados_LogBackup.trn‘ WITH NORECOVERY
+GO

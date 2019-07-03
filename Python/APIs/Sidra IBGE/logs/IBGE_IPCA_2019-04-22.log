@@ -1,0 +1,9 @@
+1428 - 22-Apr-19 18:31:58 - root - WARNING - Fazendo requisição ao Web Service.
+1428 - 22-Apr-19 18:31:58 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.sidra.ibge.gov.br:80
+1428 - 22-Apr-19 18:31:58 - urllib3.connectionpool - DEBUG - http://api.sidra.ibge.gov.br:80 "GET /values/t/1419/n7/all/v/63/p/201701/c315/all/f/u/h/n HTTP/1.1" 200 933818
+1428 - 22-Apr-19 18:31:58 - root - WARNING - Requisição de dados realizado com sucesso.
+1428 - 22-Apr-19 18:31:58 - root - WARNING - Conectando na base de dados.
+1428 - 22-Apr-19 18:31:58 - root - WARNING - Conectado com a base de dados.
+1428 - 22-Apr-19 18:31:58 - root - WARNING - Executando query na base de dados.
+1428 - 22-Apr-19 18:31:59 - root - WARNING - Query executada com sucesso na base de dados.
+1428 - 22-Apr-19 18:31:59 - root - WARNING - Conexão com banco Finalizada.

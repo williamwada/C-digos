@@ -1,0 +1,1 @@
+SET IDENTITY_INSERT tb_ipca_mensal_ibge ON; 

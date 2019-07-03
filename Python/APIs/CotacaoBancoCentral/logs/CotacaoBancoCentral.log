@@ -1,0 +1,39 @@
+12756 - 16-Apr-19 11:57:48 - root - WARNING - Fazendo requisição ao Web Service.
+12756 - 16-Apr-19 11:57:49 - root - WARNING - Requisição de dados realizado com sucesso.
+12756 - 16-Apr-19 11:57:49 - root - WARNING - Conectando na base de dados.
+12756 - 16-Apr-19 11:57:49 - root - WARNING - Conectado com a base de dados.
+12756 - 16-Apr-19 11:57:49 - root - WARNING - Executando query na base de dados.
+12756 - 16-Apr-19 11:57:49 - root - WARNING - Query executada com sucesso na base de dados.
+12756 - 16-Apr-19 11:57:49 - root - WARNING - Conexão com banco Finalizada.
+11236 - 16-Apr-19 12:16:31 - root - WARNING - Fazendo requisição ao Web Service.
+11236 - 16-Apr-19 12:16:32 - root - WARNING - Requisição de dados realizado com sucesso.
+11236 - 16-Apr-19 12:16:32 - root - WARNING - Conectando na base de dados.
+11236 - 16-Apr-19 12:16:32 - root - WARNING - Conectado com a base de dados.
+11236 - 16-Apr-19 12:16:32 - root - WARNING - Executando query na base de dados.
+11236 - 16-Apr-19 12:16:33 - root - WARNING - Query executada com sucesso na base de dados.
+11236 - 16-Apr-19 12:16:33 - root - WARNING - Conexão com banco Finalizada.
+11360 - 16-Apr-19 12:46:00 - root - WARNING - Fazendo requisição ao Web Service.
+11360 - 16-Apr-19 12:46:01 - root - WARNING - Requisição de dados realizado com sucesso.
+11360 - 16-Apr-19 12:46:01 - root - WARNING - Conectando na base de dados.
+11360 - 16-Apr-19 12:46:01 - root - WARNING - Conectado com a base de dados.
+11360 - 16-Apr-19 12:46:01 - root - WARNING - Executando query na base de dados.
+11360 - 16-Apr-19 12:46:01 - root - WARNING - Query executada com sucesso na base de dados.
+11360 - 16-Apr-19 12:46:01 - root - WARNING - Conexão com banco Finalizada.
+596 - 16-Apr-19 12:46:50 - root - WARNING - Fazendo requisição ao Web Service.
+596 - 16-Apr-19 12:46:52 - root - WARNING - Requisição de dados realizado com sucesso.
+596 - 16-Apr-19 12:46:52 - root - WARNING - Conectando na base de dados.
+596 - 16-Apr-19 12:46:52 - root - WARNING - Conectado com a base de dados.
+596 - 16-Apr-19 12:46:52 - root - WARNING - Executando query na base de dados.
+596 - 16-Apr-19 12:46:52 - root - WARNING - Query executada com sucesso na base de dados.
+596 - 16-Apr-19 12:46:52 - root - WARNING - Conexão com banco Finalizada.
+1916 - 16-Apr-19 12:47:53 - root - WARNING - Fazendo requisição ao Web Service.
+1916 - 16-Apr-19 12:47:53 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): api.bcb.gov.br:80
+1916 - 16-Apr-19 12:47:53 - urllib3.connectionpool - DEBUG - http://api.bcb.gov.br:80 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 302 0
+1916 - 16-Apr-19 12:47:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.bcb.gov.br:443
+1916 - 16-Apr-19 12:47:54 - urllib3.connectionpool - DEBUG - https://api.bcb.gov.br:443 "GET /dados/serie/bcdata.sgs.10813/dados/ultimos/100?formato=json HTTP/1.1" 200 3901
+1916 - 16-Apr-19 12:47:54 - root - WARNING - Requisição de dados realizado com sucesso.
+1916 - 16-Apr-19 12:47:54 - root - WARNING - Conectando na base de dados.
+1916 - 16-Apr-19 12:47:54 - root - WARNING - Conectado com a base de dados.
+1916 - 16-Apr-19 12:47:54 - root - WARNING - Executando query na base de dados.
+1916 - 16-Apr-19 12:47:54 - root - WARNING - Query executada com sucesso na base de dados.
+1916 - 16-Apr-19 12:47:54 - root - WARNING - Conexão com banco Finalizada.

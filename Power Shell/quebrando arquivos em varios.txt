@@ -1,0 +1,1 @@
+$i=0; Get-Content G:\Microdados\Receita_Federal\CNPJ\bigfile\K032001K.txt -ReadCount 50000 | %{$i++; $_ | Out-File G:\Microdados\Receita_Federal\CNPJ\bigfile\out_$i.txt}
