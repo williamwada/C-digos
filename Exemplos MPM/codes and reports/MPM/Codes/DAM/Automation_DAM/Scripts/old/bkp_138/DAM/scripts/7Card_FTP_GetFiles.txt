@@ -1,0 +1,7 @@
+#connect to SFTP server using a password
+open ftp://adcf_ftp_user_seven:Mr2DshbXG8bTYWsM@sevenapi.ad-webreg.jp/dantai/seven/ -passive -explicitssl -explicittls
+
+#upload file
+get -filemask="*>=0D" f13/ D:\AD_7FI_PRD\DATA_AREA\IN\DAM\
+#exit WinSCP
+exit

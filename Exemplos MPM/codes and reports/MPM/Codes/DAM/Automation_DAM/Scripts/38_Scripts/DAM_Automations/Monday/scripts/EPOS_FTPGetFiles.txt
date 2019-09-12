@@ -1,0 +1,12 @@
+#-----
+#EPOS
+#connect to SFTP server 
+#------
+open ftp://adcf_ftp_user:Mr2DshbXG8bTYWsM@api.ad-webreg.jp/dantai/epos/ -passive -explicitssl -explicittls
+
+#upload file
+get -filemask="*>=2D" f13/ D:\AD_EPOS_PRD\DATA_AREA\IN\DAM\
+
+#exit WinSCP
+exit
+

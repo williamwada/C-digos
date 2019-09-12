@@ -1,0 +1,3 @@
+Set oShell = WScript.CreateObject ("WScript.Shell")
+oShell.run "cmd.exe /C copy ""S:\Claims\Sound.wav"" ""C:\WINDOWS\Media\Sound.wav"" "
+Set oShell = Nothing'

@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="Shift_JIS" ?>
+<package>
+  <job>
+    <runtime></runtime>
+    <script language="VBScript">
+<![CDATA[
+
+'=================================================================
+' ==============send Email
+' Written by William Wada
+'=================================================================
+
+'set yesterday date
+d = date() - 1
+dateFinal= Cstr(year(d) * 10000 + month(d) * 100 + day(d))
+dateEmail= month(d)&"/"&day(d)
+
+Dim xstrAll(), strMessage,intupper()
+
+'Send mail
+SentMail
+
+
+
+ '=========================================================================
+ 'F13 SEND=================================================================
+ Sub SentMail
+ 
+  strAccountID="mpmjccf@mpmjapan.com"
+  strPassword="Cloud12!"
+  'strSMTPServer="smtp.office365.com"
+  strSMTPServer="pod51010.outlook.com"
+  strAttach = "D:\AD_EPOS_PRD\DATA_AREA\IN\DAM\f13\AF13_EPOS_WEB_SALES_"&dateFinal&".zip"
+  
+ 
+  strTo= "william@mpmjapan.com;" 
+  strFrom="mpmjccf@mpmjapan.com"
+  strSubject="EPOS_WEB_SALES_F13_"&dateFinal&"の送付"
+  desc = "F13"
+  
+  strMessage =  strMessage & "大変お世話になっております。"& VbCrLf
+  strMessage =  strMessage & VbCrLf & dateEmail & " F13データをお送り致します。" & VbCrLf    
+  strMessage =  strMessage & "ご確認いただきますようお願いいたします。"& VbCrLf & VbCrLf 
+  'strMessage =  strMessage & "※解凍PWは別途お送り致します。"& VbCrLf & VbCrLf 
+  strMessage =  strMessage & "以上、よろしくお願い致します。"& VbCrLf & VbCrLf 
+  strMessage =  strMessage & "MPM Japan Ops Team"& VbCrLf 
+  'strMessage =  strMessage & "Operations Analyst"& VbCrLf 
+  strMessage =  strMessage & "L5 Tokyo Club Bldg 3-2-6 Kasumigaseki Chiyoda-ku Tokyo 100-0013"& VbCrLf
+  'strMessage =  strMessage & "Mobile: 080-1134-9409"& VbCrLf 
+  'strMessage =  strMessage & "mailto:william.wada@mpmjapan.com"& VbCrLf 
+  
+  
+   SendMail strFrom,strTo,strSubject,strMessage,strAccountID,strPassword,strSMTPServer,strAttach,desc
+  
+ '================================================================================
+ 'DAM_REPORT SEND=================================================================
+ '================================================================================
+  
+  strTo      = "william@mpmjapan.com" 
+  strFrom    = "mpmjccf@mpmjapan.com"
+  strSubject = "Epos_Web_Sales_Report_"&dateFinal&"の送付"
+  desc = "Epos Web Sales"
+  strMessage =  "お世話になっております。"& VbCrLf & VbCrLf & dateEmail & "の申し込み状況につきご報告申し上げます。" & VbCrLf    
+  strMessage =  strMessage & "添付ファイルをご確認下さい。"& VbCrLf & VbCrLf 
+  strMessage =  strMessage & "以上、よろしくお願いします。"& VbCrLf & VbCrLf 
+  strMessage =  strMessage & "MPM Japan Ops Team"& VbCrLf 
+  'strMessage =  strMessage & "Operations Analyst"& VbCrLf 
+  strMessage =  strMessage & "L5 Tokyo Club Bldg 3-2-6 Kasumigaseki Chiyoda-ku Tokyo 100-0013"& VbCrLf
+  'strMessage =  strMessage & "Mobile: 080-1134-9409"& VbCrLf 
+  'strMessage =  strMessage & "mailto:william.wada@mpmjapan.com"& VbCrLf 
+  
+  strAttach = "D:\AD_EPOS_PRD\Reports\DAM\Daily_Reports\WEB_EPOS_Sales_"&dateFinal&".zip"
+  
+   SendMail strFrom,strTo,strSubject,strMessage,strAccountID,strPassword,strSMTPServer,strAttach,desc
+ 
+'================================================================================
+'DAM_SALES number REPORT SEND===================================================
+'===============================================================================
+
+
+  strTo      = "dailysales@mpmjapan.com" 
+  strFrom    = "mpmjccf@mpmjapan.com"
+  strSubject = "DAM Sales Report_"&dateFinal
+  
+Dim sServer, sConn, oConn, sDatabaseName, sUser, sPassword , field_can, field_mgi, field_total, Recordset, sqlString , desc
+Dim SsServer, SsConn, SoConn, SsDatabaseName, SsUser, SsPassword , Sfield_can, Sfield_mgi, Sfield_total, SRecordset, SsqlString , Sdesc
+Dim field_can_a(2),field_mgi_a(2),field_total_a(2),Ecount,Scount
+Dim sfield_can_a(2),sfield_mgi_a(2),sfield_total_a(2)
+
+'EPOS
+sDatabaseName="DDS_EPOS_PRD"
+sServer="172.31.31.159"
+sUser="ad_epos_user"
+sPassword="ad_epos_159"
+sConn="provider=sqloledb;data source=" & sServer & ";initial catalog=" & sDatabaseName
+desc="DAM Sales Report"
+Set oConn     = CreateObject("ADODB.Connection")
+Set Recordset = CreateObject("ADODB.Recordset")
+sqlString = " select sales_date,Sales_Count_CAN,Sales_Count_MGI from dbo.TM_WebEposReport where convert(date,sales_date) between convert(date,GETDATE()-3) and convert(date,GETDATE()-1) "
+
+oConn.Open sConn, sUser, sPassword
+Recordset.Open sqlString,oConn
+
+
+'7Card
+SsDatabaseName="DDS_7FI_PRD"
+SsServer="172.31.31.160"
+SsUser="ad_7fi_user"
+SsPassword="ad_7fi_160"
+SsConn="provider=sqloledb;data source=" & SsServer & ";initial catalog=" & SsDatabaseName
+Sdesc="7DAM Sales Report"
+Set SoConn     = CreateObject("ADODB.Connection")
+Set SRecordset = CreateObject("ADODB.Recordset")
+SsqlString = " select Sales_Count_CAN,Sales_Count_MGI from dbo.TM_WebReport where convert(date,sales_date) between convert(date,GETDATE()-3) and convert(date,GETDATE()-1) "
+
+SoConn.Open SsConn, SsUser, SsPassword
+SRecordset.Open SsqlString,SoConn
+
+Ecount = 0
+
+'first of all determine whether there are any records 
+If Recordset.EOF and SRecordset.EOF Then 
+
+	wscript.echo "There are no records to retrieve; Check that you have the correct job number."
+
+Else 
+	'if there are records then loop through the fields 
+	Do While NOT Recordset.Eof
+	
+		field_can_a(Ecount)  = Recordset("Sales_Count_CAN")
+		field_mgi_a (Ecount) = Recordset("Sales_Count_MGI")
+		field_total_a(Ecount)= field_can_a(Ecount) + field_mgi_a(Ecount)
+	
+	Ecount = Ecount+1
+	Recordset.MoveNext     
+
+	Loop
+	
+Scount = 0	
+	
+		Do While NOT SRecordset.Eof
+			sfield_can_a(Scount)  = SRecordset("Sales_Count_CAN")
+			sfield_mgi_a(Scount) = SRecordset("Sales_Count_MGI")
+			sfield_total_a(Scount)= sfield_can_a(Scount) + sfield_mgi_a(Scount)
+		Scount = Scount+1	
+			SRecordset.MoveNext
+		Loop
+			
+		
+		
+			  'EPOS
+			  strMessage =  "Hi All,"& VbCrLf & VbCrLf
+			  strMessage =  strMessage & "DAM sales as below." & VbCrLf & VbCrLf   
+			  strMessage =  strMessage & "Epos DAM"& VbCrLf & VbCrLf 
+			  strMessage =  strMessage & dateFinal-2& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "MGI                      "&field_mgi_a(0)& VbCrLf 
+			  strMessage =  strMessage & "CAN                      "&field_can_a(0)& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "TOTAL                    "&field_total_a(0)& VbCrLf 
+			  strMessage =  strMessage  & VbCrLf& VbCrLf 
+			  strMessage =  strMessage & dateFinal-1& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "MGI                      "&field_mgi_a(1)& VbCrLf 
+			  strMessage =  strMessage & "CAN                      "&field_can_a(1)& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "TOTAL                    "&field_total_a(1)& VbCrLf 
+			  strMessage =  strMessage  & VbCrLf& VbCrLf 
+			  strMessage =  strMessage & dateFinal& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "MGI                      "&field_mgi_a(2)& VbCrLf 
+			  strMessage =  strMessage & "CAN                      "&field_can_a(2)& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "TOTAL                    "&field_total_a(2)& VbCrLf 
+			  strMessage =  strMessage  & VbCrLf& VbCrLf 
+			  '7Card
+			  strMessage =  strMessage & "7Card DAM"& VbCrLf & VbCrLf 
+			  strMessage =  strMessage & dateFinal-2& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "MGI                      "&sfield_mgi_a(0)& VbCrLf 
+			  strMessage =  strMessage & "CAN                      "&sfield_can_a(0)& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "TOTAL                    "&sfield_total_a(0)& VbCrLf& VbCrLf 
+			  strMessage =  strMessage & dateFinal-1& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "MGI                      "&sfield_mgi_a(1)& VbCrLf 
+			  strMessage =  strMessage & "CAN                      "&sfield_can_a(1)& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "TOTAL                    "&sfield_total_a(1)& VbCrLf& VbCrLf 
+			  strMessage =  strMessage & dateFinal& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "MGI                      "&sfield_mgi_a(2)& VbCrLf 
+			  strMessage =  strMessage & "CAN                      "&sfield_can_a(2)& VbCrLf 
+			  strMessage =  strMessage & "--------------------"& VbCrLf 
+			  strMessage =  strMessage & "TOTAL                    "&sfield_total_a(2)& VbCrLf& VbCrLf 
+			  strMessage =  strMessage & "Best Regards, "& VbCrLf & VbCrLf
+			  
+			  'Signature
+			  strMessage =  strMessage & "Ops Team"& VbCrLf 
+			  'strMessage =  strMessage & "Operations Analyst"& VbCrLf   
+			  strMessage =  strMessage & "L5 Tokyo Club Bldg 3-2-6 Kasumigaseki Chiyoda-ku Tokyo 100-0013"& VbCrLf
+			  'strMessage =  strMessage & "Mobile: 080-1134-9409"& VbCrLf 
+			  'strMessage =  strMessage & "mailto:william.wada@mpmjapan.com"& VbCrLf 
+						  
+			  
+			  SendMailNoAttach strFrom,strTo,strSubject,strMessage,strAccountID,strPassword,strSMTPServer,desc
+			
+				
+
+End If
+
+'close the connection 
+
+Recordset.Close
+Set Recordset=nothing
+SRecordset.Close
+Set SRecordset=nothing
+oConn.Close
+Set oConn=nothing
+SoConn.Close
+Set SoConn=nothing
+
+ 
+If Err.Number = 0 Then
+	WScript.Echo "Finished Sucessfull!"
+	 Wscript.Quit
+ELSE
+	WScript.Echo "Failed: " & Err.Description
+	 Wscript.Quit
+End If
+
+
+ End Sub
+ 
+ 
+
+
+'=======================FUNCTIONS =======================
+ Function SendMail( strFrom, strSendTo, strSubject, strMessage , strUser, strPassword, strSMTP , strAttach, Desc )
+
+     Set oEmail = CreateObject("CDO.Message")
+    
+    'configure message
+    With oEmail.Configuration.Fields
+          .Item("http://schemas.microsoft.com/cdo/configuration/sendusing") = 2 
+          .Item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = strSMTP
+          .Item("http://schemas.microsoft.com/cdo/configuration/smtpusessl") = true
+		  .Item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") =25     
+		  .item("http://schemas.microsoft.com/cdo/configuration/StartTLS") = true   
+          .item("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = 1 
+          .item("http://schemas.microsoft.com/cdo/configuration/sendusername") = strUser
+          .item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = strPassword          
+          
+		  .Update
+    End With
+    
+    ' build messaged
+    With oEmail
+         .From           = strFrom
+         .To             = strSendTo 
+         .Subject        = strSubject
+         .TextBody       = strMessage
+		 .AddAttachment strAttach
+    End With
+	
+    ' send message
+    On Error Resume Next
+    oEmail.Send	 
+    If Err Then
+         WScript.Echo "SendMail"&Desc& " Failed:" & Err.Description
+	Else
+	WScript.Echo "email"&Desc &" Sent"
+    End If
+  
+ End Function
+ '====END FUNCTIONS 
+	  
+  '=======================FUNCTIONS =======================
+ Function SendMailNoAttach( strFrom, strSendTo, strSubject, strMessage , strUser, strPassword, strSMTP, desc )
+
+     Set oEmail = CreateObject("CDO.Message")
+    
+    'configure message
+    With oEmail.Configuration.Fields
+          .Item("http://schemas.microsoft.com/cdo/configuration/sendusing") = 2 
+          .Item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = strSMTP
+          .Item("http://schemas.microsoft.com/cdo/configuration/smtpusessl") = true
+		  .Item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") =25     
+		  .item("http://schemas.microsoft.com/cdo/configuration/StartTLS") = true   
+          .item("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = 1 
+          .item("http://schemas.microsoft.com/cdo/configuration/sendusername") = strUser
+          .item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = strPassword          
+          
+		  .Update
+    End With
+    
+    ' build messaged
+    With oEmail
+         .From           = strFrom
+         .To             = strSendTo 
+         .Subject        = strSubject
+         .TextBody       = strMessage		 
+    End With
+	
+    ' send message
+    On Error Resume Next
+    oEmail.Send	 
+    If Err Then
+         WScript.Echo "SendMail "&desc&" Failed:" & Err.Description
+	Else
+	WScript.Echo "email "&desc&" Sent "
+    End If
+    
+ End Function
+ '====END FUNCTIONS 
+	  
+	  
+    ]]>
+    </script>
+  </job>
+</package>

@@ -1,0 +1,1 @@
+SQLCMD -S CFDBSVR01 -U sjnk_mun_user -P sjnk_mun_209 -d DDS_MUNNK_PRD -Q "Exec stpLoad_stpLoad_Size_Tabless"

@@ -1,0 +1,3 @@
+master..xp_cmdshell "net use t: \\<server>\<share> <password> /user:<username> /persistent:yes"
+EXEC master..xp_cmdshell 'copy D:\Data\file.txt  \\MachineB\Documents'
+EXEC master..xp_cmdshell "net use t: /delete"

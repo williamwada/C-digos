@@ -1,0 +1,15 @@
+Changed database context to 'EPOS'.
+
+(1 rows affected)
+Changed database context to 'EPOS'.
+
+(1 rows affected)
+Changed database context to 'EPOS'.
+
+(457 rows affected)
+COPY /Y D:\EPOS\Reports\Template\EPOS_WEB_Sales.xls /B D:\EPOS\Reports\WebEpos\EPOS_WEB_Sales_20170214\EPOS_WEB_Sales_20170214.xls
+WebEpos_Daily_Report
+--------------------
+Completed!          
+
+(1 rows affected)

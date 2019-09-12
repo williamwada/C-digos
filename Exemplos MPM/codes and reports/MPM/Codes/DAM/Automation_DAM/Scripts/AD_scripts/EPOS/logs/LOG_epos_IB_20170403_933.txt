@@ -1,0 +1,117 @@
+Changed database context to 'EPOS'.
+
+(1 rows affected)
+------------------Start loading MGI YES file------------------------
+YES-EPOSMGI20170331.txt Loading...
+18 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+18 records inserted to CUSTOMER table.
+18 records inserted to CUSTOMER_ADDRESS table.
+18 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPOSMGI20170331.txt completed.                                                                                                                                                                                                                                        
+
+(1 rows affected)
+Changed database context to 'EPOS'.
+
+(1 rows affected)
+------------------Start loading Cancer YES file------------------------
+YES-EPOSGAN20170331.txt Loading...
+23 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+9 records inserted to CUSTOMER table.
+9 records inserted to CUSTOMER_ADDRESS table.
+9 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPOSGAN20170331.txt completed.                                                                                                                                                                                                                                        
+
+(1 rows affected)
+Changed database context to 'EPOS'.
+
+(1 rows affected)
+@F4name:F4_EPOS_S2S_MGI_20170331.csv
+@F4File:D:\EPOS\DATA_AREA\STAGING_AREA\F4\F4_EPOS_S2S_MGI_20170331.csv
+42 records were loaded from F4 file.
+Dial sequence 1
+Dial sequence 2
+EPOS CDR Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EPOS CDR Loading with F4_EPOS_S2S_MGI_20170331.csv completed.                                                                                                                                                                                                                                   
+
+(1 rows affected)
+@F4name:F4_EPOS_S2S_MGI_20170401.csv
+@F4File:D:\EPOS\DATA_AREA\STAGING_AREA\F4\F4_EPOS_S2S_MGI_20170401.csv
+9 records were loaded from F4 file.
+Dial sequence 1
+EPOS CDR Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EPOS CDR Loading with F4_EPOS_S2S_MGI_20170401.csv completed.                                                                                                                                                                                                                                   
+
+(1 rows affected)
+@F4name:F4_EPOS_S2S_MGI_20170402.csv
+@F4File:D:\EPOS\DATA_AREA\STAGING_AREA\F4\F4_EPOS_S2S_MGI_20170402.csv
+5 records were loaded from F4 file.
+Dial sequence 1
+EPOS CDR Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EPOS CDR Loading with F4_EPOS_S2S_MGI_20170402.csv completed.                                                                                                                                                                                                                                   
+
+(1 rows affected)
+Changed database context to 'EPOS'.
+
+(1 rows affected)
+@F4name:F4_EPOS_S2S_GAN_20170331.csv
+@F4File:D:\EPOS\DATA_AREA\STAGING_AREA\F4\F4_EPOS_S2S_GAN_20170331.csv
+32 records were loaded from F4 file.
+Dial sequence 1
+Dial sequence 2
+EPOS CDR Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EPOS CDR Loading with F4_EPOS_S2S_GAN_20170331.csv completed.                                                                                                                                                                                                                                   
+
+(1 rows affected)
+@F4name:F4_EPOS_S2S_GAN_20170401.csv
+@F4File:D:\EPOS\DATA_AREA\STAGING_AREA\F4\F4_EPOS_S2S_GAN_20170401.csv
+4 records were loaded from F4 file.
+Dial sequence 1
+Dial sequence 2
+EPOS CDR Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EPOS CDR Loading with F4_EPOS_S2S_GAN_20170401.csv completed.                                                                                                                                                                                                                                   
+
+(1 rows affected)
+@F4name:F4_EPOS_S2S_GAN_20170402.csv
+@F4File:D:\EPOS\DATA_AREA\STAGING_AREA\F4\F4_EPOS_S2S_GAN_20170402.csv
+1 records were loaded from F4 file.
+Dial sequence 1
+EPOS CDR Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EPOS CDR Loading with F4_EPOS_S2S_GAN_20170402.csv completed.                                                                                                                                                                                                                                   
+
+(1 rows affected)
+Changed database context to 'EPOS'.
+KDDI_Summary_Report
+-------------------
+Completed!         
+Msg 7357, Level 16, State 2, Server ADCF-PCKT\ADCFSQL, Line 1
+Cannot process the object "select * from [MonthlyData20174$]". The OLE DB provider "Microsoft.ACE.OLEDB.12.0" for linked server "(null)" indicates that either the object has no columns or the current user does not have permissions on that object.
+
+(1 rows affected)

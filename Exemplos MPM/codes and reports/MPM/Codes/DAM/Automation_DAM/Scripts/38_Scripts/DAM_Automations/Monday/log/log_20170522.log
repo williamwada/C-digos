@@ -1,0 +1,38 @@
+
+D:\AD_EPOS_PRD\DAM_Automations\Monday>"C:\Program Files (x86)\WinSCP\WinSCP.com" /script=D:\AD_EPOS_PRD\DAM_Automations\Monday\scripts\EPOS_FTPGetFiles.txt 
+Connecting to api.ad-webreg.jp ...
+TLS connection established. Waiting for welcome message...
+Connected
+Starting the session...
+Session started.
+Active session: [1] adcf_ftp_user@api.ad-webreg.jp
+Selecting files using a path ending with slash is ambiguous. Remove the slash to select the folder. Append * mask to select all files in the folder.
+f13                       |            0 B |    0.0 KB/s | binary |   0%
+AF13_EPOS_WEB_SALES_20170519.xls |          28 KB | 1750.0 KB/s | binary | 100%
+AF13_EPOS_WEB_SALES_20170520.xls |          29 KB |  228.0 KB/s | binary | 100%
+AF13_EPOS_WEB_SALES_20170521.xls |          31 KB |  330.8 KB/s | binary | 100%
+Microsoft (R) Windows Script Host Version 5.8
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+File name: AF13_EPOS_WEB_SALES_20170519.xls
+executed EXEC Load_F13_DAM 'AF13_EPOS_WEB_SALES_20170519.xls'
+File name: AF13_EPOS_WEB_SALES_20170520.xls
+executed EXEC Load_F13_DAM 'AF13_EPOS_WEB_SALES_20170520.xls'
+File name: AF13_EPOS_WEB_SALES_20170521.xls
+executed EXEC Load_F13_DAM 'AF13_EPOS_WEB_SALES_20170521.xls'
+executed EXEC DAM_EposDaily_Report 3
+2.Copy_load_Create_Report Finished Sucessfull!
+Microsoft (R) Windows Script Host Version 5.8
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+FILE: D:\AD_EPOS_PRD\DATA_AREA\IN\DAM\f13\AF13_EPOS_WEB_SALES_20170521.xls
+FILE: D:\AD_EPOS_PRD\DATA_AREA\IN\DAM\f13\AF13_EPOS_WEB_SALES_20170520.xls
+FILE: D:\AD_EPOS_PRD\DATA_AREA\IN\DAM\f13\AF13_EPOS_WEB_SALES_20170519.xls
+REPORT_FILE: \\172.31.31.159\shared\DAM_EPOS\reports\\WEB_EPOS_Sales_20170521\WEB_EPOS_Sales_20170521.xls
+Microsoft (R) Windows Script Host Version 5.8
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+emailF13 Sent
+emailEpos Web Sales Sent
+emailDAM Sales Report Sent
+Finished Sucessfull!

@@ -1,0 +1,42 @@
+
+D:\AD_EPOS_PRD\DAM_Automations>"C:\Program Files (x86)\WinSCP\WinSCP.com" /script=D:\AD_EPOS_PRD\DAM_Automations\scripts\EPOS_FTPGetFiles.txt 
+Connecting to api.ad-webreg.jp ...
+TLS connection established. Waiting for welcome message...
+Connected
+Starting the session...
+Session started.
+Active session: [1] adcf_ftp_user@api.ad-webreg.jp
+Selecting files using a path ending with slash is ambiguous. Remove the slash to select the folder. Append * mask to select all files in the folder.
+f13                       |            0 B |    0.0 KB/s | binary |   0%
+AF13_EPOS_WEB_SALES_20170420.xls |          33 KB |  153.7 KB/s | binary | 100%
+
+D:\AD_EPOS_PRD\DAM_Automations>"C:\Program Files (x86)\WinSCP\WinSCP.com" /script=D:\AD_EPOS_PRD\DAM_Automations\scripts\7Card_FTP_GetFiles.txt 
+Connecting to sevenapi.ad-webreg.jp ...
+TLS connection established. Waiting for welcome message...
+Connected
+Starting the session...
+Session started.
+Active session: [1] adcf_ftp_user_seven@sevenapi.ad-webreg.jp
+Selecting files using a path ending with slash is ambiguous. Remove the slash to select the folder. Append * mask to select all files in the folder.
+f13                       |            0 B |    0.0 KB/s | binary |   0%
+AF13_7CARD_WEB_SALES_20170420.xls |           5 KB |  343.8 KB/s | binary | 100%
+Microsoft (R) Windows Script Host Version 5.8
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+File name: AF13_EPOS_WEB_SALES_20170419.xls
+executed EXEC Load_F13_DAM 'AF13_EPOS_WEB_SALES_20170419.xls'
+File name: AF13_EPOS_WEB_SALES_20170420.xls
+executed EXEC Load_F13_DAM 'AF13_EPOS_WEB_SALES_20170420.xls'
+executed EXEC DAM_EposDaily_Report
+2.Copy_load_Create_Report Finished Sucessfull!
+Microsoft (R) Windows Script Host Version 5.8
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Microsoft (R) Windows Script Host Version 5.8
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+emailF13 Sent
+SendMailEpos Web Sales Failed:The transport failed to connect to the server.
+
+email DAM Sales Report Sent 
+Finished Sucessfull!

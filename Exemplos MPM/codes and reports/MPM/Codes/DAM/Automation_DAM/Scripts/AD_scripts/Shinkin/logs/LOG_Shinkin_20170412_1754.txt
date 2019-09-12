@@ -1,0 +1,63 @@
+Changed database context to 'Shinkin'.
+
+(1 rows affected)
+main time elapsed             
+------------------------------
+00:00:00:017                  
+
+(1 rows affected)
+Changed database context to 'Shinkin'.
+
+(1 rows affected)
+main time elapsed             
+------------------------------
+00:00:00:017                  
+
+(1 rows affected)
+Changed database context to 'Shinkin'.
+
+(1 rows affected)
+main time elapsed             
+------------------------------
+00:00:00:017                  
+
+(1 rows affected)
+Changed database context to 'Shinkin'.
+KDDI_Summary_Report
+-------------------
+Completed!         
+
+(1 rows affected)
+KDDI_KPI_Report
+---------------
+Completed!     
+
+(1 rows affected)
+KDDI_TSR_Report
+---------------
+Completed!     
+
+(1 rows affected)
+Warning: Null value is eliminated by an aggregate or other SET operation.
+Warning: Null value is eliminated by an aggregate or other SET operation.
+KDDI_TSR_SHIFT_REPORT
+---------------------
+Completed!           
+
+(1 rows affected)
+KDDI_TSR_Report_Acc
+-------------------
+Completed!         
+
+(1 rows affected)
+@tmpFile: D:\Shinkin\Reports\Template\SCTKA_Daily_Sales2_yymmdd.xls
+@tgtFile: D:\Shinkin\Reports\SCTKA_Daily_Sales_20170411.xls
+SCTKA_Daily_Report_2
+--------------------
+Completed           
+
+(1 rows affected)
+cpcd                    
+------------ -----------
+
+(0 rows affected)

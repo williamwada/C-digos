@@ -1,0 +1,1 @@
+ sqlcmd -S WILLIAM\MPMJAPAN -d Northwind -U sa -P vaga1109 -i C:\Users\williamwada\Desktop\test.sql -o log%date:~0,4%%date:~5,2%%date:~8,2%_%time:~0,2%%time:~3,2%.txt

@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <job>
+    <runtime></runtime>
+    <script language="VBScript">
+<![CDATA[
+
+'=================================================================
+' ==============send Email
+' Written by William Wada
+'=================================================================
+
+'set yesterday date
+d = date() - 1
+dateFinal= Cstr(year(d) * 10000 + month(d) * 100 + day(d))
+dateEmail= month(d)&"/"&day(d)
+
+
+Dim xstrAll(), strMessage,intupper()
+Set objFSO = CreateObject("Scripting.FileSystemObject")
+
+'Send mail
+SentMail
+
+
+
+ '=========================================================================
+ 'F13 SEND=================================================================
+ Sub SentMail
+ 
+  strAccountID="william@mpmjapan.com"
+  strPassword="JETSTre@m110910"
+  'strSMTPServer="smtp.office365.com"
+  strSMTPServer="pod51010.outlook.com"
+  strAttach = "D:\AD_EPOS_PRD\DATA_AREA\IN\DAM\f13\AF13_EPOS_WEB_SALES_"&dateFinal&".zip"
+  
+ 
+  strTo= "william@mpmjapan.com" 
+  strFrom="william@mpmjapan.com"
+  strSubject="EPOS_WEB_SALES_F13_"&dateFinal&"の送付"
+  desc = "F13"
+  
+  strMessage =  strMessage & "株式会社エポスカード様"& vbCr & vbCr &"大変お世話になっております。"& vbCr
+  strMessage =  strMessage & "MPMジャパンのウィリアムです。"& vbCr & vbCr & dateEmail & " F13データをお送り致します。" & vbCr    
+  strMessage =  strMessage & "ご確認いただきますようお願いいたします。"& vbCr & vbCr 
+  'strMessage =  strMessage & "※解凍PWは別途お送り致します。"& vbCr & vbCr 
+  strMessage =  strMessage & "以上、よろしくお願い致します。"& vbCr & vbCr 
+  strMessage =  strMessage & "William Wada"& vbCr 
+  strMessage =  strMessage & "Operations Analyst"& vbCr 
+  strMessage =  strMessage & "L5 Tokyo Club Bldg 3-2-6 Kasumigaseki Chiyoda-ku Tokyo 100-0013"& vbCr
+  strMessage =  strMessage & "Mobile: 080-1134-9409"& vbCr 
+  strMessage =  strMessage & "mailto:william.wada@mpmjapan.com"& vbCr 
+  
+  
+   SendMail strFrom,strTo,strSubject,strMessage,strAccountID,strPassword,strSMTPServer,strAttach,desc
+  
+ '================================================================================
+ 'DAM_REPORT SEND=================================================================
+ '================================================================================
+  
+  strTo      = "william@mpmjapan.com" 
+  strFrom    = "william@mpmjapan.com"
+  strSubject = "Epos_Web_Sales_Report_"&dateFinal&"の送付"
+  desc = "Epos Web Sales"
+  strMessage =  "お世話になっております。MPMJ のウィリアムです。"& vbCr & vbCr & dateEmail & "の申し込み状況につきご報告申し上げます。" & vbCr    
+  strMessage =  strMessage & "添付ファイルをご確認下さい。"& vbCr & vbCr 
+  strMessage =  strMessage & "以上、よろしくお願いします。"& vbCr & vbCr 
+  strMessage =  strMessage & "William Wada"& vbCr 
+  strMessage =  strMessage & "Operations Analyst"& vbCr 
+  strMessage =  strMessage & "L5 Tokyo Club Bldg 3-2-6 Kasumigaseki Chiyoda-ku Tokyo 100-0013"& vbCr
+  strMessage =  strMessage & "Mobile: 080-1134-9409"& vbCr 
+  strMessage =  strMessage & "mailto:william.wada@mpmjapan.com"& vbCr 
+  
+  strAttach = "Z:\DAM_EPOS\reports\WEB_EPOS_Sales_"&dateFinal&".zip"
+  
+   SendMail strFrom,strTo,strSubject,strMessage,strAccountID,strPassword,strSMTPServer,strAttach,desc
+ 
+'================================================================================
+'DAM_SALES number REPORT SEND===================================================
+'===============================================================================
+
+
+  strTo      = "william@mpmjapan.com" 
+  strFrom    = "william@mpmjapan.com"
+  strSubject = "DAM Sales Report_"&dateFinal
+  
+Dim sServer, sConn, oConn, sDatabaseName, sUser, sPassword , field_can, field_mgi, field_total, Recordset, sqlString , desc
+
+sDatabaseName="DDS_EPOS_PRD"
+sServer="172.31.31.159"
+sUser="ad_epos_user"
+sPassword="ad_epos_159"
+sConn="provider=sqloledb;data source=" & sServer & ";initial catalog=" & sDatabaseName
+desc="DAM Sales Report"
+Set oConn     = CreateObject("ADODB.Connection")
+Set Recordset = CreateObject("ADODB.Recordset")
+sqlString = " select Sales_Count_CAN,Sales_Count_MGI from dbo.TM_WebEposReport where convert(date,sales_date) = convert(date,GETDATE()-1) "
+
+oConn.Open sConn, sUser, sPassword
+Recordset.Open sqlString,oConn
+
+'first of all determine whether there are any records 
+If Recordset.EOF Then 
+
+	wscript.echo "There are no records to retrieve; Check that you have the correct job number."
+
+Else 
+	'if there are records then loop through the fields 
+	Do While NOT Recordset.Eof   
+
+	field_can  = Recordset("Sales_Count_CAN")
+	field_mgi  = Recordset("Sales_Count_MGI")
+	field_total= field_can + field_mgi
+
+		if field_can <> "" then
+		
+			  'EPOS
+			  strMessage =  "Hi All,"& vbCr & vbCr
+			  strMessage =  strMessage & "DAM sales as below." & vbCr & vbCr   
+			  strMessage =  strMessage & "Epos DAM"& vbCr & vbCr 
+			  strMessage =  strMessage & dateFinal& vbCr 
+			  strMessage =  strMessage & "--------------------"& vbCr 
+			  strMessage =  strMessage & "MGI                      "&field_mgi& vbCr 
+			  strMessage =  strMessage & "CAN                      "&field_can& vbCr 
+			  strMessage =  strMessage & "--------------------"& vbCr 
+			  strMessage =  strMessage & "TOTAL                    "&field_total& vbCr 
+			  strMessage =  strMessage  & vbCr& vbCr 
+			  '7Card
+			  strMessage =  strMessage & "7Card DAM"& vbCr & vbCr 
+			  strMessage =  strMessage & dateFinal& vbCr 
+			  strMessage =  strMessage & "--------------------"& vbCr 
+			  strMessage =  strMessage & "MGI                      "&field_mgi& vbCr 
+			  strMessage =  strMessage & "CAN                      "&field_can& vbCr 
+			  strMessage =  strMessage & "--------------------"& vbCr 
+			  strMessage =  strMessage & "TOTAL                    "&field_total& vbCr& vbCr 
+			  strMessage =  strMessage & "Best Regards, "& vbCr & vbCr
+			  
+			  'Signature
+			  strMessage =  strMessage & "William Wada"& vbCr 
+			  strMessage =  strMessage & "Operations Analyst"& vbCr   
+			  strMessage =  strMessage & "L5 Tokyo Club Bldg 3-2-6 Kasumigaseki Chiyoda-ku Tokyo 100-0013"& vbCr
+			  strMessage =  strMessage & "Mobile: 080-1134-9409"& vbCr 
+			  strMessage =  strMessage & "mailto:william.wada@mpmjapan.com"& vbCr 
+			  			  
+			  
+			  SendMailNoAttach strFrom,strTo,strSubject,strMessage,strAccountID,strPassword,strSMTPServer,desc
+			
+			
+		end if
+
+		Recordset.MoveNext     
+
+	Loop
+
+End If
+
+'close the connection 
+
+Recordset.Close
+Set Recordset=nothing
+
+oConn.Close
+Set oConn=nothing
+
+ 
+If Err.Number = 0 Then
+	WScript.Echo "Finished Sucessfull!"
+	 Wscript.Quit
+ELSE
+	WScript.Echo "Failed: " & Err.Description
+	 Wscript.Quit
+End If
+
+
+ End Sub
+ 
+ 
+
+
+'=======================FUNCTIONS =======================
+ Function SendMail( strFrom, strSendTo, strSubject, strMessage , strUser, strPassword, strSMTP , strAttach, Desc )
+
+     Set oEmail = CreateObject("CDO.Message")
+    
+    'configure message
+    With oEmail.Configuration.Fields
+          .Item("http://schemas.microsoft.com/cdo/configuration/sendusing") = 2 
+          .Item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = strSMTP
+          .Item("http://schemas.microsoft.com/cdo/configuration/smtpusessl") = true
+		  .Item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") =25     
+		  .item("http://schemas.microsoft.com/cdo/configuration/StartTLS") = true   
+          .item("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = 1 
+          .item("http://schemas.microsoft.com/cdo/configuration/sendusername") = strUser
+          .item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = strPassword          
+          
+		  .Update
+    End With
+    
+    ' build messaged
+    With oEmail
+         .From           = strFrom
+         .To             = strSendTo 
+         .Subject        = strSubject
+         .TextBody       = strMessage
+		 .AddAttachment strAttach
+    End With
+	
+    ' send message
+    On Error Resume Next
+    oEmail.Send	 
+    If Err Then
+         WScript.Echo "SendMail"&Desc& " Failed:" & Err.Description
+	Else
+	WScript.Echo "email"&Desc &" Sent"
+    End If
+    
+ End Function
+ '====END FUNCTIONS 
+	  
+  '=======================FUNCTIONS =======================
+ Function SendMailNoAttach( strFrom, strSendTo, strSubject, strMessage , strUser, strPassword, strSMTP, desc )
+
+     Set oEmail = CreateObject("CDO.Message")
+    
+    'configure message
+    With oEmail.Configuration.Fields
+          .Item("http://schemas.microsoft.com/cdo/configuration/sendusing") = 2 
+          .Item("http://schemas.microsoft.com/cdo/configuration/smtpserver") = strSMTP
+          .Item("http://schemas.microsoft.com/cdo/configuration/smtpusessl") = true
+		  .Item("http://schemas.microsoft.com/cdo/configuration/smtpserverport") =25     
+		  .item("http://schemas.microsoft.com/cdo/configuration/StartTLS") = true   
+          .item("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = 1 
+          .item("http://schemas.microsoft.com/cdo/configuration/sendusername") = strUser
+          .item("http://schemas.microsoft.com/cdo/configuration/sendpassword") = strPassword          
+          
+		  .Update
+    End With
+    
+    ' build messaged
+    With oEmail
+         .From           = strFrom
+         .To             = strSendTo 
+         .Subject        = strSubject
+         .TextBody       = strMessage		 
+    End With
+	
+    ' send message
+    On Error Resume Next
+    oEmail.Send	 
+    If Err Then
+         WScript.Echo "SendMail "&desc&" Failed:" & Err.Description
+	Else
+	WScript.Echo "email "&desc&" Sent "
+    End If
+    
+ End Function
+ '====END FUNCTIONS 
+	  
+	  
+    ]]>
+    </script>
+  </job>
+</package>

@@ -1,0 +1,295 @@
+Changed database context to 'EPOS'.
+
+(1 rows affected)
+------------------Start loading MGI YES file------------------------
+YES-EPWEBMGI20170501.tx Loading...
+0 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+0 records inserted to CUSTOMER table.
+0 records inserted to CUSTOMER_ADDRESS table.
+0 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBMGI20170501.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading MGI YES file------------------------
+YES-EPWEBMGI20170502.tx Loading...
+0 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+0 records inserted to CUSTOMER table.
+0 records inserted to CUSTOMER_ADDRESS table.
+0 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBMGI20170502.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading MGI YES file------------------------
+YES-EPWEBMGI20170503.tx Loading...
+2 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+2 records inserted to CUSTOMER table.
+2 records inserted to CUSTOMER_ADDRESS table.
+2 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBMGI20170503.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading MGI YES file------------------------
+YES-EPWEBMGI20170504.tx Loading...
+0 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+0 records inserted to CUSTOMER table.
+0 records inserted to CUSTOMER_ADDRESS table.
+0 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBMGI20170504.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading MGI YES file------------------------
+YES-EPWEBMGI20170505.tx Loading...
+2 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+2 records inserted to CUSTOMER table.
+2 records inserted to CUSTOMER_ADDRESS table.
+2 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBMGI20170505.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading MGI YES file------------------------
+YES-EPWEBMGI20170506.tx Loading...
+2 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+2 records inserted to CUSTOMER table.
+2 records inserted to CUSTOMER_ADDRESS table.
+2 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBMGI20170506.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading MGI YES file------------------------
+YES-EPWEBMGI20170507.tx Loading...
+0 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+0 records inserted to CUSTOMER table.
+0 records inserted to CUSTOMER_ADDRESS table.
+0 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBMGI20170507.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+Changed database context to 'EPOS'.
+
+(1 rows affected)
+------------------Start loading Cancer YES file------------------------
+YES-EPWEBCAN20170501.tx Loading...
+2 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+2 records inserted to CUSTOMER table.
+2 records inserted to CUSTOMER_ADDRESS table.
+2 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBCAN20170501.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading Cancer YES file------------------------
+YES-EPWEBCAN20170502.tx Loading...
+2 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+2 records inserted to CUSTOMER table.
+2 records inserted to CUSTOMER_ADDRESS table.
+2 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBCAN20170502.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading Cancer YES file------------------------
+YES-EPWEBCAN20170503.tx Loading...
+1 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+0 records inserted to CUSTOMER table.
+0 records inserted to CUSTOMER_ADDRESS table.
+0 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBCAN20170503.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading Cancer YES file------------------------
+YES-EPWEBCAN20170504.tx Loading...
+2 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+2 records inserted to CUSTOMER table.
+2 records inserted to CUSTOMER_ADDRESS table.
+2 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBCAN20170504.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading Cancer YES file------------------------
+YES-EPWEBCAN20170505.tx Loading...
+3 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+1 records inserted to CUSTOMER table.
+1 records inserted to CUSTOMER_ADDRESS table.
+1 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBCAN20170505.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading Cancer YES file------------------------
+YES-EPWEBCAN20170506.tx Loading...
+4 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+3 records inserted to CUSTOMER table.
+3 records inserted to CUSTOMER_ADDRESS table.
+3 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBCAN20170506.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+------------------Start loading Cancer YES file------------------------
+YES-EPWEBCAN20170507.tx Loading...
+3 number of data Loadded.
+-----------------------------------------------------
+----------------------UPDATE Exist Customer-------------------------------
+0 records of customer were updated.
+0 records of address were stopped.
+0 records of customer address were replaced.
+0 records of credit_card table were stopped.
+0 records inserted to CREDIT_CARD table.
+CUSTOMER_ID does exist Finished 
+---------------------------------------- 
+3 records inserted to CUSTOMER table.
+3 records inserted to CUSTOMER_ADDRESS table.
+3 records inserted to CREDIT_CARD table.
+YES Load Result                                                                                                                                                                                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+YES File Loading with YES-EPWEBCAN20170507.txt completed.                                                                                                                                                                                                                                       
+
+(1 rows affected)
+Changed database context to 'EPOS'.
+
+(539 rows affected)
+COPY /Y D:\EPOS\Reports\Template\EPOS_WEB_Sales.xls /B D:\EPOS\Reports\WebEpos\EPOS_WEB_Sales_20170507\EPOS_WEB_Sales_20170507.xls
+WebEpos_Daily_Report
+--------------------
+Completed!          
+
+(1 rows affected)

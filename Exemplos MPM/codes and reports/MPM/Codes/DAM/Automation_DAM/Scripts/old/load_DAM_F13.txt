@@ -1,0 +1,24 @@
+'set objects
+	  Dim objFolder 
+	  Dim objFile 
+	  Set fso = CreateObject("Scripting.FileSystemObject")
+	  Set objFolder = fso.GetFolder(SourceFolder) 
+	  Set DataFiles = objFolder.Files
+	  NumberOfFiles = DataFiles.Count
+
+	    ' If it doesn't have any files display a message
+		If NumberOfFiles= 0 Then
+		msgbox"File not found!",vbError,"Error"
+		Else
+			'Loop through the Files collection 
+			For Each objFile in objFolder.Files 
+				
+				' Check the files type
+				'if right(fso.GetFileName(objFile),3) = "csv" then 
+					fso.moveFile SourceFile, DestFolder
+						
+				'end if 
+			Next 
+		
+		end if
+    End sub

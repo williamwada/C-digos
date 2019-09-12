@@ -1,10 +1,10 @@
 ﻿# Database variables
-$sqlserver = "WILLIAM-T\LCA_P1"
+$sqlserver = "WWA\LCA_P1"
 $database = "CNPJ"
-$table = "tb_raw_cnpj2"
+$table = "TB_RAW_CNPJ_v2"
  
 # CSV variables
-$csvfile = "E:\raw_data\K032001K.txt"
+$csvfile = "E:\raw_data\CNPJ_raw_data\26082019\26082019\output.txt"
 $csvdelimiter = "`t"
 $firstRowColumnNames = $false
  

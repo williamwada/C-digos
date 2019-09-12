@@ -1,0 +1,82 @@
+Changed database context to 'Shinkin'.
+
+(1 rows affected)
+main time elapsed             
+------------------------------
+00:00:00:000                  
+
+(1 rows affected)
+Changed database context to 'Shinkin'.
+
+(1 rows affected)
+308 records were loaded from F4 file.
+Dial sequence 3
+Dial sequence 4
+Dial sequence 5
+Dial sequence 6
+Dial sequence 7
+P12 Result                                                                                                                                                                                                                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+P12 excution with F4_SNKN_MGI_KDDI-MPM_20170508.csv completed.                                                                                                                                                                                                                              
+
+(1 rows affected)
+main time elapsed             
+------------------------------
+00:07:49:653                  
+
+(1 rows affected)
+Changed database context to 'Shinkin'.
+
+(1 rows affected)
+1 records were loaded from F4 file.
+Dial sequence 2
+P12 Result                                                                                                                                                                                                                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+P12 excution with F4_SNKN_GAN_KDDI-MPM_20170508.csv completed.                                                                                                                                                                                                                              
+
+(1 rows affected)
+main time elapsed             
+------------------------------
+00:05:36:513                  
+
+(1 rows affected)
+Changed database context to 'Shinkin'.
+KDDI_Summary_Report
+-------------------
+Completed!         
+
+(1 rows affected)
+KDDI_KPI_Report
+---------------
+Completed!     
+
+(1 rows affected)
+KDDI_TSR_Report
+---------------
+Completed!     
+
+(1 rows affected)
+Warning: Null value is eliminated by an aggregate or other SET operation.
+Warning: Null value is eliminated by an aggregate or other SET operation.
+Warning: Null value is eliminated by an aggregate or other SET operation.
+KDDI_TSR_SHIFT_REPORT
+---------------------
+Completed!           
+
+(1 rows affected)
+KDDI_TSR_Report_Acc
+-------------------
+Completed!         
+
+(1 rows affected)
+@tmpFile: D:\Shinkin\Reports\Template\SCTKA_Daily_Sales2_yymmdd.xls
+@tgtFile: D:\Shinkin\Reports\SCTKA_Daily_Sales_20170509.xls
+SCTKA_Daily_Report_2
+--------------------
+Completed           
+
+(1 rows affected)
+cpcd                    
+------------ -----------
+
+(0 rows affected)
